@@ -1,16 +1,17 @@
 {
-  "name": "storybooks",
+  "name": "yatra",
   "version": "1.0.0",
-  "description": "App for creating public and private stories",
+  "description": "App for creating CRUD with Oauth",
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app",
     "postinstall": "node ./scripts/post-install.js"
   },
-  "author": "Brad Traversy",
+  "author": "Vineet kumar",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.798.0",
     "connect-mongo": "^3.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

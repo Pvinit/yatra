@@ -1,12 +1,12 @@
-# StoryBooks
+# Yatra
 
-> Create public and private stories from your life
 
-This app uses Node.js/Express/MongoDB with Google OAuth for authentication
+App uses Node.js/Express/MongoDB with Google OAuth for authentication 
+and also use s3 service for upload files
 
 ## Usage
 
-Add your mongoDB URI and Google OAuth credentials to the config.env file
+Add your mongoDB URI, Google OAuth and aws-s3  credentials to the config.env file
 
 ```
 # Install dependencies
@@ -14,7 +14,3 @@ npm install
 
 # Run in development
 npm run dev
-
-# Run in production
-npm start
-```

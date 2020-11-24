@@ -41,26 +41,11 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
 
-// Handlebars Helpers
-const {
-  formatDate,
-  stripTags,
-  truncate,
-  editIcon,
-  select,
-} = require('./helpers/hbs')
 
 // Handlebars
 app.engine(
   '.hbs',
   exphbs({
-    helpers: {
-      formatDate,
-      stripTags,
-      truncate,
-      editIcon,
-      select,
-    },
     defaultLayout: 'main',
     extname: '.hbs',
   })
@@ -93,7 +78,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 // Routes
 app.use('/', require('./routes/index'))
 app.use('/auth', require('./routes/auth'))
-app.use('/stories', require('./routes/stories'))
+app.use('/orders', require('./routes/orders'))
 
 const PORT = process.env.PORT || 3000
 
